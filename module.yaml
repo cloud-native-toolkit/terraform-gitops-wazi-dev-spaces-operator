@@ -1,6 +1,8 @@
-name: ""
+name: gitops-wazi-dev-spaces-operator
 type: gitops
-description: ""
+description: >-
+  Module to populate a gitops repo with the resources to provision
+  wazi-dev-spaces-operator
 tags:
   - tools
   - gitops
@@ -11,16 +13,16 @@ versions:
       - ocp4
     providers:
       - name: gitops
-        source: "cloud-native-toolkit/gitops"
+        source: cloud-native-toolkit/gitops
     dependencies:
       - id: gitops
         refs:
           - source: github.com/cloud-native-toolkit/terraform-tools-gitops.git
-            version: ">= 1.1.0"
+            version: '>= 1.1.0'
       - id: namespace
         refs:
           - source: github.com/cloud-native-toolkit/terraform-gitops-namespace.git
-            version: ">= 1.0.0"
+            version: '>= 1.0.0'
     variables:
       - name: gitops_config
         moduleRef:
