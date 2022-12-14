@@ -1,0 +1,6 @@
+apiVersion: v2
+name: wazi-devspaces-operator
+appVersion: "1.1"
+description: A Helm chart to deploy wazi dev spaces operator
+type: application
+version: 1.0.1
