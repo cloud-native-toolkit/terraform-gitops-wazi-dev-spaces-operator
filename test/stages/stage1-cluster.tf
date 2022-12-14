@@ -5,8 +5,6 @@ module "dev_cluster" {
   login_user = var.cluster_username
   login_password = var.cluster_password
   login_token = ""
-  ca_cert_file = ""
-  ca_cert = ""
 }
 
 resource null_resource output_kubeconfig {
