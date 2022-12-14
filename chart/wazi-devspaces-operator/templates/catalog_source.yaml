@@ -3,8 +3,6 @@ kind: CatalogSource
 metadata:
   name: ibm-operator-catalog
   namespace: openshift-marketplace
-  annotations:
-    argocd.argoproj.io/sync-wave: "100"
 spec:
   displayName: IBM Operator Catalog
   publisher: IBM
