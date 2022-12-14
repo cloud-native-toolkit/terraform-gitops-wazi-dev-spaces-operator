@@ -1,0 +1,10 @@
+name: gitops-wazi-dev-spaces-operator
+type: gitops
+description: >-
+  Module to populate a gitops repo with the resources to provision
+  wazi-dev-spaces-operator
+tags:
+  - tools
+  - gitops
+versions: []
+id: github.com/cloud-native-toolkit/terraform-gitops-wazi-dev-spaces-operator
