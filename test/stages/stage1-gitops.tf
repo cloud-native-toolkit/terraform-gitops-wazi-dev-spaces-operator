@@ -16,7 +16,7 @@ module "gitea" {
 }
 
 module "gitops" {
-  source = "github.com/cloud-native-toolkit/terraform-tools-gitops.git"
+  source = "github.com/cloud-native-toolkit/terraform-tools-gitops.git?rel=v1.23.1"
 
   gitea_host = module.gitea.host
   gitea_org = module.gitea.org
