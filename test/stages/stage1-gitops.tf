@@ -24,7 +24,7 @@ module "gitea" {
 }
 
 module "gitops" {
-  source = "github.com/cloud-native-toolkit/terraform-tools-gitops?ref=v1.23.0"
+  source = "github.com/cloud-native-toolkit/terraform-tools-gitops?ref=v1.23.1"
   depends_on = [
     module.gitea
   ]
