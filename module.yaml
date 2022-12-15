@@ -1,4 +1,4 @@
-name: gitops-wazi-dev-spaces-operator
+name: gitops-wazi-ds-op
 type: gitops
 description: >-
   Module to populate a gitops repo with the resources to provision

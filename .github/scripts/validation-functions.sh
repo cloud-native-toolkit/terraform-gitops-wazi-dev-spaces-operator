@@ -60,7 +60,7 @@ check_k8s_resource () {
     sleep 30
   done
 
-  if [[ $count -gt 20 ]]; then
+  if [[ $count -gt 40 ]]; then
     echo "Timed out waiting for ${GITOPS_TYPE}/${NAME}" >&2
     kubectl get "${GITOPS_TYPE}" -n "${NS}"
     exit 1

@@ -1,5 +1,10 @@
 module "gitops-bootstrap" {
   source = "github.com/cloud-native-toolkit/terraform-util-gitops-bootstrap.git"
+  depends_on = [
+    module.dev_cluster,
+    module.gitops,
+    module.cert
+  ]
 
   cluster_config_file = module.dev_cluster.config_file_path
   gitops_repo_url     = module.gitops.config_repo_url
